@@ -14,11 +14,11 @@ struct Network: Networking {
     func request(response: @escaping (JSON?) -> ()) {
         Alamofire.request(DataConfig.url).responseJSON {
             responseData in
-            print(responseData)
+            //print(responseData)
             switch responseData.result {
             case .success(let data):
                 response(JSON(data))
-            case .failure(let error):
+            case .failure(let _):
                 response(nil)
             }
         }

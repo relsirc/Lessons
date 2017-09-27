@@ -113,7 +113,7 @@ extension SwinjectStoryboard {
         defaultContainer.storyboardInitCompleted(ViewController.self) { r, c in
             c.dataFetcher = r.resolve(DataFetcher.self)
         }
-        defaultContainer.register(Networking.self) { _ in Network() }
+        defaultContainer.register(Networking.self) { _ in NormalNetwork() }
         defaultContainer.register(DataFetcher.self) {
             r in
             DataFetcher(networking: r.resolve(Networking.self)!)
