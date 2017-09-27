@@ -9,6 +9,11 @@
 import Foundation
 
 struct Note {
-    let id: String
-    let message: String
+    var id: String
+    var message: String
+    
+    init() {
+        id = ""
+        message = ""
+    }
 }

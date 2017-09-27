@@ -40,6 +40,9 @@ class ViewController: UIViewController {
         
         dataFetcher?.fetch(response: { (notes) in
             print(notes)
+            self.notes.removeAll()
+            self.notes = notes
+            self.tableView.reloadData()
         })
     }
     
@@ -106,6 +109,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
 
 extension SwinjectStoryboard {
     @objc class func setup() {
+        Container.loggingFunction = nil
         defaultContainer.storyboardInitCompleted(ViewController.self) { r, c in
             c.dataFetcher = r.resolve(DataFetcher.self)
         }

@@ -16,11 +16,27 @@ struct DataFetcher {
         networking.request { (data) in
             // map the json data into model
             print(data)
+            
+            guard let noteData = data else {
+                response([Note]())
+                return }
+            
+            let notes = self.decode(data: noteData)
+            response(notes)
         }
     }
     
     private func decode(data: JSON) -> [Note] {
         var notes = [Note]()
+        print(data)
+        for (_, json) in data {
+            var note = Note()
+            note.id = json["id"].stringValue
+            note.message = json["note"].stringValue
+            notes.append(note)
+        }
+        
+        print(notes)
         return notes
     }
 }
