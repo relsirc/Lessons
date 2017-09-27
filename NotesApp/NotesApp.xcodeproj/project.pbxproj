@@ -14,7 +14,6 @@
 		4186979D1F7B617B004C3F3C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4186979B1F7B617B004C3F3C /* LaunchScreen.storyboard */; };
 		418697A81F7B617B004C3F3C /* NotesAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418697A71F7B617B004C3F3C /* NotesAppTests.swift */; };
 		418697B41F7B6625004C3F3C /* NoteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418697B31F7B6625004C3F3C /* NoteModel.swift */; };
-		418697B61F7B6657004C3F3C /* NoteFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418697B51F7B6657004C3F3C /* NoteFetcher.swift */; };
 		418697B81F7B669D004C3F3C /* DataConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418697B71F7B669D004C3F3C /* DataConfig.swift */; };
 		418697BA1F7B66E1004C3F3C /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418697B91F7B66E1004C3F3C /* DataSource.swift */; };
 		418697BC1F7B67C8004C3F3C /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418697BB1F7B67C8004C3F3C /* Network.swift */; };
@@ -47,7 +46,6 @@
 		418697A71F7B617B004C3F3C /* NotesAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesAppTests.swift; sourceTree = "<group>"; };
 		418697A91F7B617B004C3F3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		418697B31F7B6625004C3F3C /* NoteModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteModel.swift; sourceTree = "<group>"; };
-		418697B51F7B6657004C3F3C /* NoteFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteFetcher.swift; sourceTree = "<group>"; };
 		418697B71F7B669D004C3F3C /* DataConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataConfig.swift; sourceTree = "<group>"; };
 		418697B91F7B66E1004C3F3C /* DataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
 		418697BB1F7B67C8004C3F3C /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
@@ -103,19 +101,17 @@
 		418697911F7B617B004C3F3C /* NotesApp */ = {
 			isa = PBXGroup;
 			children = (
+				418697F11F7B8795004C3F3C /* BoilerPlate */,
+				418697F01F7B8775004C3F3C /* Protocols */,
+				418697EF1F7B8750004C3F3C /* Network */,
 				418697B21F7B6608004C3F3C /* Model */,
 				418697921F7B617B004C3F3C /* AppDelegate.swift */,
 				418697941F7B617B004C3F3C /* ViewController.swift */,
+				418697B71F7B669D004C3F3C /* DataConfig.swift */,
 				418697961F7B617B004C3F3C /* Main.storyboard */,
 				418697991F7B617B004C3F3C /* Assets.xcassets */,
 				4186979B1F7B617B004C3F3C /* LaunchScreen.storyboard */,
 				4186979E1F7B617B004C3F3C /* Info.plist */,
-				418697B51F7B6657004C3F3C /* NoteFetcher.swift */,
-				418697B71F7B669D004C3F3C /* DataConfig.swift */,
-				418697B91F7B66E1004C3F3C /* DataSource.swift */,
-				418697BB1F7B67C8004C3F3C /* Network.swift */,
-				418697BD1F7B6B20004C3F3C /* DataFetcher.swift */,
-				418697ED1F7B83AF004C3F3C /* NormalNetwork.swift */,
 			);
 			path = NotesApp;
 			sourceTree = "<group>";
@@ -135,6 +131,31 @@
 				418697B31F7B6625004C3F3C /* NoteModel.swift */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		418697EF1F7B8750004C3F3C /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				418697BB1F7B67C8004C3F3C /* Network.swift */,
+				418697ED1F7B83AF004C3F3C /* NormalNetwork.swift */,
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
+		418697F01F7B8775004C3F3C /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				418697B91F7B66E1004C3F3C /* DataSource.swift */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
+		418697F11F7B8795004C3F3C /* BoilerPlate */ = {
+			isa = PBXGroup;
+			children = (
+				418697BD1F7B6B20004C3F3C /* DataFetcher.swift */,
+			);
+			name = BoilerPlate;
 			sourceTree = "<group>";
 		};
 		5C64F60B30255F835DF60CD6 /* Frameworks */ = {
@@ -392,7 +413,6 @@
 				418697B41F7B6625004C3F3C /* NoteModel.swift in Sources */,
 				418697931F7B617B004C3F3C /* AppDelegate.swift in Sources */,
 				418697BC1F7B67C8004C3F3C /* Network.swift in Sources */,
-				418697B61F7B6657004C3F3C /* NoteFetcher.swift in Sources */,
 				418697BE1F7B6B20004C3F3C /* DataFetcher.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
