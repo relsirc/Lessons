@@ -1,0 +1,620 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		418697931F7B617B004C3F3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418697921F7B617B004C3F3C /* AppDelegate.swift */; };
+		418697951F7B617B004C3F3C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418697941F7B617B004C3F3C /* ViewController.swift */; };
+		418697981F7B617B004C3F3C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 418697961F7B617B004C3F3C /* Main.storyboard */; };
+		4186979A1F7B617B004C3F3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 418697991F7B617B004C3F3C /* Assets.xcassets */; };
+		4186979D1F7B617B004C3F3C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4186979B1F7B617B004C3F3C /* LaunchScreen.storyboard */; };
+		418697A81F7B617B004C3F3C /* NotesAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418697A71F7B617B004C3F3C /* NotesAppTests.swift */; };
+		418697B41F7B6625004C3F3C /* NoteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418697B31F7B6625004C3F3C /* NoteModel.swift */; };
+		418697B61F7B6657004C3F3C /* NoteFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418697B51F7B6657004C3F3C /* NoteFetcher.swift */; };
+		418697B81F7B669D004C3F3C /* DataConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418697B71F7B669D004C3F3C /* DataConfig.swift */; };
+		418697BA1F7B66E1004C3F3C /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418697B91F7B66E1004C3F3C /* DataSource.swift */; };
+		418697BC1F7B67C8004C3F3C /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418697BB1F7B67C8004C3F3C /* Network.swift */; };
+		418697BE1F7B6B20004C3F3C /* DataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418697BD1F7B6B20004C3F3C /* DataFetcher.swift */; };
+		92DC1B6459636DF24F095902 /* Pods_NotesApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CA060E71E259C86BD9053CF /* Pods_NotesApp.framework */; };
+		D14B7819841B287FCBA5BEB5 /* Pods_NotesAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97D5DCF015198DD574253256 /* Pods_NotesAppTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		418697A41F7B617B004C3F3C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 418697871F7B617B004C3F3C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4186978E1F7B617B004C3F3C;
+			remoteInfo = NotesApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0CA060E71E259C86BD9053CF /* Pods_NotesApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NotesApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4186978F1F7B617B004C3F3C /* NotesApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NotesApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		418697921F7B617B004C3F3C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		418697941F7B617B004C3F3C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		418697971F7B617B004C3F3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		418697991F7B617B004C3F3C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4186979C1F7B617B004C3F3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4186979E1F7B617B004C3F3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		418697A31F7B617B004C3F3C /* NotesAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NotesAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		418697A71F7B617B004C3F3C /* NotesAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesAppTests.swift; sourceTree = "<group>"; };
+		418697A91F7B617B004C3F3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		418697B31F7B6625004C3F3C /* NoteModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteModel.swift; sourceTree = "<group>"; };
+		418697B51F7B6657004C3F3C /* NoteFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteFetcher.swift; sourceTree = "<group>"; };
+		418697B71F7B669D004C3F3C /* DataConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataConfig.swift; sourceTree = "<group>"; };
+		418697B91F7B66E1004C3F3C /* DataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
+		418697BB1F7B67C8004C3F3C /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		418697BD1F7B6B20004C3F3C /* DataFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataFetcher.swift; sourceTree = "<group>"; };
+		4C4286FCA3FB486A8C532B74 /* Pods-NotesApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotesApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NotesApp/Pods-NotesApp.debug.xcconfig"; sourceTree = "<group>"; };
+		97D5DCF015198DD574253256 /* Pods_NotesAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NotesAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1F78B18F6EEBDAFACF4C9A5 /* Pods-NotesAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotesAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NotesAppTests/Pods-NotesAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		EA507D289BE0A1734572E89D /* Pods-NotesAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotesAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NotesAppTests/Pods-NotesAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		ED34F5B6A5313B31939ED931 /* Pods-NotesApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotesApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-NotesApp/Pods-NotesApp.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4186978C1F7B617B004C3F3C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92DC1B6459636DF24F095902 /* Pods_NotesApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		418697A01F7B617B004C3F3C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D14B7819841B287FCBA5BEB5 /* Pods_NotesAppTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		418697861F7B617B004C3F3C = {
+			isa = PBXGroup;
+			children = (
+				418697911F7B617B004C3F3C /* NotesApp */,
+				418697A61F7B617B004C3F3C /* NotesAppTests */,
+				418697901F7B617B004C3F3C /* Products */,
+				866D18B5E715F6B94B5ED8EA /* Pods */,
+				5C64F60B30255F835DF60CD6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		418697901F7B617B004C3F3C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4186978F1F7B617B004C3F3C /* NotesApp.app */,
+				418697A31F7B617B004C3F3C /* NotesAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		418697911F7B617B004C3F3C /* NotesApp */ = {
+			isa = PBXGroup;
+			children = (
+				418697B21F7B6608004C3F3C /* Model */,
+				418697921F7B617B004C3F3C /* AppDelegate.swift */,
+				418697941F7B617B004C3F3C /* ViewController.swift */,
+				418697961F7B617B004C3F3C /* Main.storyboard */,
+				418697991F7B617B004C3F3C /* Assets.xcassets */,
+				4186979B1F7B617B004C3F3C /* LaunchScreen.storyboard */,
+				4186979E1F7B617B004C3F3C /* Info.plist */,
+				418697B51F7B6657004C3F3C /* NoteFetcher.swift */,
+				418697B71F7B669D004C3F3C /* DataConfig.swift */,
+				418697B91F7B66E1004C3F3C /* DataSource.swift */,
+				418697BB1F7B67C8004C3F3C /* Network.swift */,
+				418697BD1F7B6B20004C3F3C /* DataFetcher.swift */,
+			);
+			path = NotesApp;
+			sourceTree = "<group>";
+		};
+		418697A61F7B617B004C3F3C /* NotesAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				418697A71F7B617B004C3F3C /* NotesAppTests.swift */,
+				418697A91F7B617B004C3F3C /* Info.plist */,
+			);
+			path = NotesAppTests;
+			sourceTree = "<group>";
+		};
+		418697B21F7B6608004C3F3C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				418697B31F7B6625004C3F3C /* NoteModel.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		5C64F60B30255F835DF60CD6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0CA060E71E259C86BD9053CF /* Pods_NotesApp.framework */,
+				97D5DCF015198DD574253256 /* Pods_NotesAppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		866D18B5E715F6B94B5ED8EA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4C4286FCA3FB486A8C532B74 /* Pods-NotesApp.debug.xcconfig */,
+				ED34F5B6A5313B31939ED931 /* Pods-NotesApp.release.xcconfig */,
+				D1F78B18F6EEBDAFACF4C9A5 /* Pods-NotesAppTests.debug.xcconfig */,
+				EA507D289BE0A1734572E89D /* Pods-NotesAppTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4186978E1F7B617B004C3F3C /* NotesApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 418697AC1F7B617B004C3F3C /* Build configuration list for PBXNativeTarget "NotesApp" */;
+			buildPhases = (
+				1597B14E2F0438107785B335 /* [CP] Check Pods Manifest.lock */,
+				4186978B1F7B617B004C3F3C /* Sources */,
+				4186978C1F7B617B004C3F3C /* Frameworks */,
+				4186978D1F7B617B004C3F3C /* Resources */,
+				4DF6420C925221228565520F /* [CP] Embed Pods Frameworks */,
+				FBC20391B9C878706FC3F8A1 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NotesApp;
+			productName = NotesApp;
+			productReference = 4186978F1F7B617B004C3F3C /* NotesApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		418697A21F7B617B004C3F3C /* NotesAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 418697AF1F7B617B004C3F3C /* Build configuration list for PBXNativeTarget "NotesAppTests" */;
+			buildPhases = (
+				64CD54F7779FDD22E99AAB2E /* [CP] Check Pods Manifest.lock */,
+				4186979F1F7B617B004C3F3C /* Sources */,
+				418697A01F7B617B004C3F3C /* Frameworks */,
+				418697A11F7B617B004C3F3C /* Resources */,
+				C1CD9782917C1C034BA18AA6 /* [CP] Embed Pods Frameworks */,
+				CFC95DB84EF202BBDAB03F53 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				418697A51F7B617B004C3F3C /* PBXTargetDependency */,
+			);
+			name = NotesAppTests;
+			productName = NotesAppTests;
+			productReference = 418697A31F7B617B004C3F3C /* NotesAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		418697871F7B617B004C3F3C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = crisler;
+				TargetAttributes = {
+					4186978E1F7B617B004C3F3C = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = ZGTVP83ZGP;
+						ProvisioningStyle = Automatic;
+					};
+					418697A21F7B617B004C3F3C = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = ZGTVP83ZGP;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 4186978E1F7B617B004C3F3C;
+					};
+				};
+			};
+			buildConfigurationList = 4186978A1F7B617B004C3F3C /* Build configuration list for PBXProject "NotesApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 418697861F7B617B004C3F3C;
+			productRefGroup = 418697901F7B617B004C3F3C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4186978E1F7B617B004C3F3C /* NotesApp */,
+				418697A21F7B617B004C3F3C /* NotesAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4186978D1F7B617B004C3F3C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4186979D1F7B617B004C3F3C /* LaunchScreen.storyboard in Resources */,
+				4186979A1F7B617B004C3F3C /* Assets.xcassets in Resources */,
+				418697981F7B617B004C3F3C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		418697A11F7B617B004C3F3C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1597B14E2F0438107785B335 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NotesApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4DF6420C925221228565520F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-NotesApp/Pods-NotesApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/Swinject/Swinject.framework",
+				"${BUILT_PRODUCTS_DIR}/SwinjectStoryboard/SwinjectStoryboard.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Swinject.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwinjectStoryboard.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NotesApp/Pods-NotesApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		64CD54F7779FDD22E99AAB2E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NotesAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C1CD9782917C1C034BA18AA6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-NotesAppTests/Pods-NotesAppTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NotesAppTests/Pods-NotesAppTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CFC95DB84EF202BBDAB03F53 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NotesAppTests/Pods-NotesAppTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FBC20391B9C878706FC3F8A1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NotesApp/Pods-NotesApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4186978B1F7B617B004C3F3C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				418697BA1F7B66E1004C3F3C /* DataSource.swift in Sources */,
+				418697B81F7B669D004C3F3C /* DataConfig.swift in Sources */,
+				418697951F7B617B004C3F3C /* ViewController.swift in Sources */,
+				418697B41F7B6625004C3F3C /* NoteModel.swift in Sources */,
+				418697931F7B617B004C3F3C /* AppDelegate.swift in Sources */,
+				418697BC1F7B67C8004C3F3C /* Network.swift in Sources */,
+				418697B61F7B6657004C3F3C /* NoteFetcher.swift in Sources */,
+				418697BE1F7B6B20004C3F3C /* DataFetcher.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4186979F1F7B617B004C3F3C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				418697A81F7B617B004C3F3C /* NotesAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		418697A51F7B617B004C3F3C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4186978E1F7B617B004C3F3C /* NotesApp */;
+			targetProxy = 418697A41F7B617B004C3F3C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		418697961F7B617B004C3F3C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				418697971F7B617B004C3F3C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4186979B1F7B617B004C3F3C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4186979C1F7B617B004C3F3C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		418697AA1F7B617B004C3F3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		418697AB1F7B617B004C3F3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		418697AD1F7B617B004C3F3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C4286FCA3FB486A8C532B74 /* Pods-NotesApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ZGTVP83ZGP;
+				INFOPLIST_FILE = NotesApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.anytimes.NotesApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		418697AE1F7B617B004C3F3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED34F5B6A5313B31939ED931 /* Pods-NotesApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ZGTVP83ZGP;
+				INFOPLIST_FILE = NotesApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.anytimes.NotesApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		418697B01F7B617B004C3F3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1F78B18F6EEBDAFACF4C9A5 /* Pods-NotesAppTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = ZGTVP83ZGP;
+				INFOPLIST_FILE = NotesAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.anytimes.NotesAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NotesApp.app/NotesApp";
+			};
+			name = Debug;
+		};
+		418697B11F7B617B004C3F3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA507D289BE0A1734572E89D /* Pods-NotesAppTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = ZGTVP83ZGP;
+				INFOPLIST_FILE = NotesAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.anytimes.NotesAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NotesApp.app/NotesApp";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4186978A1F7B617B004C3F3C /* Build configuration list for PBXProject "NotesApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				418697AA1F7B617B004C3F3C /* Debug */,
+				418697AB1F7B617B004C3F3C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		418697AC1F7B617B004C3F3C /* Build configuration list for PBXNativeTarget "NotesApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				418697AD1F7B617B004C3F3C /* Debug */,
+				418697AE1F7B617B004C3F3C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		418697AF1F7B617B004C3F3C /* Build configuration list for PBXNativeTarget "NotesAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				418697B01F7B617B004C3F3C /* Debug */,
+				418697B11F7B617B004C3F3C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 418697871F7B617B004C3F3C /* Project object */;
+}
